@@ -1,15 +1,27 @@
-print("Olá")
+import time
 
-name = input("Qual o seu nome?")
+tempo = 1;
 
-print("Bem vindo" + name)
+# aqui fica as funções 
 
-print("Escolha uma das opções abaixo:")
-print("1 - Falar com atendente")
-print("2 - Ligar")
-print("3 - Finalizar pedido")
+def sauda():
+    print("Olá")
 
-opcao = int(input("Escolha uma opção"))
+    nameuser = input("Qual o seu nome?")
+
+    print("Bem vindo" + nameuser)
+
+
+def menu():
+    print("Como posso te ajudar?")
+    time.sleep(tempo)
+    print("1 - Falar com atendente")
+    time.sleep(tempo)
+    print("2 - Ligar")
+    time.sleep(tempo)
+    print("3 - Finalizar pedido")
+
+    opcao = int(input("Escolha uma opção"))
 
     if opcao == 1:
         print("Aguarde, logo voce ser[a atendido]")
@@ -23,4 +35,9 @@ opcao = int(input("Escolha uma opção"))
     else:
         print("Opção incorreta!")
 
-    
+
+sauda()
+menu()
+
+
+        
